@@ -489,7 +489,7 @@
 .logo-box img {
     position: absolute;
     top: -30px; /* 👈 Controls overlap height */
-    left: 135%;
+    left: 50%;
     transform: translateX(-50%);
     width: 100px;
     height: auto;
