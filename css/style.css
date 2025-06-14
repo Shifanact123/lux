@@ -459,12 +459,53 @@
     z-index: 4;
 }
 
-.about .about-item-image .about-item-image-effect {
+
+.about-item-image-content {
+    width: 55%;
+    height: 55%;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--bs-secondary);
+    border: 4px solid var(--bs-primary);
+    opacity: 0.9;
+    z-index: 4;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+/* Logo box no longer needs margin */
+.logo-box {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+/* Overlapping logo image */
+.logo-box img {
+    position: absolute;
+    top: -30px; /* 👈 Controls overlap height */
+    left: 135%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: auto;
+    border: 2px solid var(--bs-primary);
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
 /*** About End ***/
+
+
 
 /*** Features Start ***/
 .feature .feature-item {
