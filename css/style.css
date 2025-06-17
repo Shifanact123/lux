@@ -1,33 +1,46 @@
-
-
 /*** Spinner Start ***/
-/*** Spinner ***/
 #spinner {
     opacity: 0;
     visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
     z-index: 99999;
 }
 
 #spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
     visibility: visible;
     opacity: 1;
+    transition: opacity 0.5s ease-out, visibility 0s linear 0s;
 }
 /*** Spinner End ***/
 
+
+/*** Back to Top ***/
 .back-to-top {
     position: fixed;
     right: 30px;
     bottom: 30px;
+    display: none; /* hidden by default, shown with JS */
     transition: 0.5s;
     z-index: 99;
 }
 
-/*** Button Start ***/
+
+/*** Button Sizes ***/
 .btn {
     font-weight: 600;
-    transition: .5s;
+    transition: 0.5s;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-md-square,
+.btn-lg-square,
+.btn-xl-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
 }
 
 .btn-square {
@@ -55,18 +68,8 @@
     height: 66px;
 }
 
-.btn-square,
-.btn-sm-square,
-.btn-md-square,
-.btn-lg-square,
-.btn-xl-square {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: normal;
-}
 
+/*** Button Colors ***/
 .btn.btn-primary {
     border: none;
 }
@@ -78,18 +81,20 @@
 .btn.btn-secondary {
     color: var(--bs-white);
     border: none;
-   
 }
 
 .btn.btn-secondary:hover {
     background: var(--bs-primary);
 }
-/*** Topbar Start ***/
+
+
+/*** Topbar ***/
 .topbar {
     padding: 2px 10px 2px 20px;
     background: var(--bs-primary);
+    color: var(--bs-white);
 }
-/*** Topbar End ***/
+
 
 /*** Navbar ***/
 .sticky-top {
